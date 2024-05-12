@@ -12,7 +12,6 @@ It will first grab all page with scripted Selenium browser
 Then, this content will be parsed with another python script
 
 #### Installation :
-
  ```
  cd /home/linkedinapi
  apt update
@@ -30,9 +29,10 @@ Install requirements:
 ```
 pip3 install -r requirements.txt
 ```
-Retrieve company_name here https://www.linkedin.com/company/<xxxxxxx>  
-Put company_name in customerlist.txt, one by line  
-Once done, run the script like this:  
+* Retrieve company_name here https://www.linkedin.com/company/<xxxxxxx> 
+* Put company_name in customerlist.txt, one by line
+* Fill linkedin_user and linkedin_password in the python script
+* Once done, run the script like this:  
 ```
 python3 linkedin_content_scraper.py
 ```

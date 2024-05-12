@@ -13,6 +13,8 @@ from selenium.webdriver.support.ui import Select
 
 
 customerlist = 'customerlist.txt'
+linkedin_user = ''
+linkedin_password = ''
 
 # Prepare working folder
 if not os.path.exists('company-linkedin-feed'):
@@ -25,8 +27,8 @@ browser.get('https://www.linkedin.com/login')
 username = browser.find_element_by_xpath('//*[@id="username"]')
 password = browser.find_element_by_xpath('//*[@id="password"]')
 
-username.send_keys('xxxxxxxxxx')
-password.send_keys('xxxxxxxxxx')
+username.send_keys(linkedin_user)
+password.send_keys(linkedin_password)
 
 submitButton = browser.find_element_by_css_selector('html.artdeco body.system-fonts div#app__container main.app__content div form.login__form div.login__form_action_container button.btn__primary--large.from__button--floating')
 submitButton.click()
